@@ -1,0 +1,65 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="../static/stylesheets/home.css" />
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="../static/js/home.js"></script>
+</head>
+
+<body>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div id="svg_wrap"></div>
+
+  <h1>Crop Predictor</h1>
+  <form method="post" action="/home">
+    <section>
+      <p>State Name:</p>
+      <input name="State_Name" type="text" placeholder="Enter your State:">
+    </section>
+
+    <section>
+      <p>District Name:</p>
+      <input name="District_Name" type="text" placeholder="Enter your District:">
+    </section>
+
+    <section>
+      <p>Year :</p>
+      <input name="Crop_Year" type="number" min="1997" max="2015" step="1" value="1997" />
+    </section>
+
+    <section>
+      <p>Season :</p>
+      <select name="Season">
+        <option value="Kharif">Kharif</option>
+        <option value="Rabi">Rabi</option>
+        <option value="Whole Year">Whole Year</option>
+        <option value=Summer">Summer</option>
+        <option value="Winter">Winter</option>
+        <option value="Autumn">Autumn</option>
+      </select>
+    </section>
+
+    <section>
+      <p>Crop Name:</p>
+      <input name="Crop" type="text" placeholder="Enter your Crop Name:">
+    </section>
+
+    <section>
+      <p>Area:</p>
+      <input name="Area" type="text">
+    </section>
+
+
+    <div class="button" id="prev">&larr; Previous</div>
+    <div class="button" id="next">Next &rarr;</div>
+    <button class="button" type="submit" id="submit">Predict</div>
+  </form>
+</body>
+
+</html>
